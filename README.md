@@ -12,13 +12,13 @@ and delete contact records.
 
 ### Available Endpoints
 
-  Method   Endpoint           Description
-  -------- ------------------ ---------------------------------
-  GET      `/contacts`        List all contacts
-  GET      `/contacts/{id}`   Retrieve a single contact by ID
-  POST     `/contacts`        Create a new contact
-  PUT      `/contacts/{id}`   Update an existing contact
-  DELETE   `/contacts/{id}`   Delete a contact
+| Method | Endpoint       | Description                      |
+| ------ | -------------- | ---------------------------------|
+| GET    | /contacts      | List all contacts                |
+| GET    | /contacts/{id} | Retrieve a single contact by ID  |
+| POST   | /contacts      | Create a new contact             |
+| PUT    | /contacts/{id} | Update an existing contact       |
+| DELETE | /contacts/{id} | Delete a contact                 |
 
 ### Additional Endpoints
 
@@ -73,7 +73,7 @@ All required features for the challenge were fully implemented.
 
 -   Default value:
 
-        sqlite:///lexmax.db
+        sqlite:///sqlite.db
 
 ------------------------------------------------------------------------
 
