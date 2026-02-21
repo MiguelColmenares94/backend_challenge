@@ -13,12 +13,13 @@ class HealthResource(MethodView):
         responses={
             200: {
                 "description": "Service is healthy",
-                "schema": HealthSchema,
+                "content": {"application/json": {"schema": HealthSchema}},
             },
             500: {
                 "description": "Service is unhealthy",
-                "schema": HealthSchema,
+                "content": {"application/json": {"schema": HealthSchema}},
             },
+            "default": {},
         },
     )
     def get(self):

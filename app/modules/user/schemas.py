@@ -6,6 +6,9 @@ class UserSchema(Schema):
     name = fields.Str(required=True)
     lastname = fields.Str(required=True)
     email = fields.Email(required=True)
+    address = fields.Str(required=False)
+    reference_address = fields.Str(required=False)
+    phone_number = fields.Str(required=False)
     created_at = fields.DateTime(dump_only=True)
     updated_at = fields.DateTime(dump_only=True)
 
